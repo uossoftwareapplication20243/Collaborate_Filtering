@@ -9,9 +9,16 @@ port도 수정할 시 whatchamp/server.js 에서 port도 수정해주세요!
 0. 프로젝트 위치에 이동, npm install
 1. npm run build (react set build)
 2. node server
-
+3. 생각해보니 저도 node server로 했을때 프론트-백 통신이 항상 되지는 않았습니다. </br>
+npm install -g pm2 </br>
+pm2 start server.js --name test </br>
+pm2로 서버 실행하면 프론트-백 통신이 아마 항상 가능할 것 같습니다. </br>
+근데 이러면 debug가 불편하지만? whatchamp/logs/combined.log 에서 볼 수 있긴 합니다. </br>
 
 ## 구조
+
+https://youtu.be/j_b7MY0R1G4
+
 ### 1. whatchamp/src/pages/main_page.js 에서 Hide on bush#KR1일 경우, Hide on bush, KR1을 입력한다.
 
 ### 2. main_page.js에서 post 통신을 보낸다. url은 whatchamp/src/const/url.js에서 수정한다.

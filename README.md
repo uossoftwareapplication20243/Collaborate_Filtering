@@ -12,9 +12,9 @@ port도 수정할 시 whatchamp/server.js 에서 port도 수정해주세요!
 
 
 ## 구조
-1. whatchamp/src/pages/main_page.js 에서 Hide on bush#KR1일 경우, Hide on bush, KR1을 입력한다.
+### 1. whatchamp/src/pages/main_page.js 에서 Hide on bush#KR1일 경우, Hide on bush, KR1을 입력한다.
 
-2. main_page.js에서 post 통신을 보낸다. url은 whatchamp/src/const/url.js에서 수정한다.
+### 2. main_page.js에서 post 통신을 보낸다. url은 whatchamp/src/const/url.js에서 수정한다.
 ```javascript
     const response = await fetch(
       url+"/api/starter", 
@@ -111,7 +111,7 @@ pythonProcess.stdout.on('end', () => {
 
 에서  res.status(200).json으로 react로 보내게 된다.
 
-3. react의 main_page.js에서 
+### 3. react의 main_page.js에서 
 ```javascript
     if (response.status === 200) {
       const data = await response.json();
@@ -130,7 +130,7 @@ pythonProcess.stdout.on('end', () => {
 형태로 record-based 값이 true면 비전적 기반 content-based를 위해 question1_page.js로 이동한다. (4번에서 설명)
 false면 전적기반 CF를 위해 result_page.js로 이동한다 (5번에서 설명)
 
-4. react의 question1_page.js에서 question8_page.js까지 질문 응답 받으면 new_result_page.js로 이동하며
+### 4. react의 question1_page.js에서 question8_page.js까지 질문 응답 받으면 new_result_page.js로 이동하며
 ```javascript
   useEffect(() => {
     async function fetchChampionData() {
@@ -212,7 +212,7 @@ app.post('/api/new/result', (req, res) => {
 
 의 형태로 response한다. 중간중간에 console.log()를 찍어보는 것도 좋을 것 같습니다.
 
-5. react의 result_page.js에서
+### 5. react의 result_page.js에서
 
 ```javascript
   // Use useEffect to fetch data

@@ -1,1 +1,1 @@
-export const url = 'http://3.35.3.104:3000'
+export const url = 'http://www.jepetolee.p-e.kr'

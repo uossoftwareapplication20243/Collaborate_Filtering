@@ -288,30 +288,23 @@ app.get('/api/result/:username/:tag', (req, res) => {
     return res.status(400).json({ message: 'Invalid request: username, tag, and line are required' });
   }
 
-  let champions = ['아트록스', '아리', '그라가스'];
+  const userInfo = {
+    username: username,
+    tag: tag,
+    line: line
+  };
 
-
-  // python spawn
-
-
-
-  res.status(200).json({
-    message: 'Data processed successfully',
-    champions: champions, // 클라이언트로 전송할 champions 데이터
-    'record-based': true, // 예시로 추가한 필드
-  });
-});
-
-```
-
-champions 결과를 한글명으로 list해서 보내주면, src/result_page.js에서 반영됨.
-예시로 app.post('/api/new/result', (req, res)에서는 다음과 같이 사용하고 있음.
-
-```javascript
-  const scriptPath = path.join(__dirname, 'python', 'cossim.py');  // 예시: 현재 디렉토리 기준으로 python 폴더 내부
+  const scriptPath = path.join(__dirname, 'python', 'temp.py');  // 예시: 현재 디렉토리 기준으로 python 폴더 내부
   const pythonProcess = spawn('python', [scriptPath], {
     stdio: ['pipe', 'pipe', 'pipe']
   });
+
+  // JSON 데이터를 UTF-8로 인코딩하여 Python 스크립트의 stdin으로 전달
+  const jsonString = JSON.stringify(userInfo);
+  logger.debug(`Sending to Python script: ${jsonString}`); // Python으로 보내는 데이터 확인
+
+  pythonProcess.stdin.write(jsonString, 'utf-8');
+  pythonProcess.stdin.end();
 
   // Python 스크립트 결과 수신
   let data = '';
@@ -326,7 +319,7 @@ champions 결과를 한글명으로 list해서 보내주면, src/result_page.js�
     try {
       const responseData = JSON.parse(data.toString('utf-8'));
       logger.info(`Sending response to client: ${JSON.stringify(responseData)}`);
-      res.json(responseData);
+      res.status(200).json(responseData);
     } catch (err) {
       logger.error(`Error parsing Python response: ${err.message}`);
       res.status(500).json({ message: 'Python script error', error: err.message });
@@ -344,3 +337,64 @@ champions 결과를 한글명으로 list해서 보내주면, src/result_page.js�
   });
 });
 ```
+
+로, username, tag, line을 묶어 userInfo를 </br>
+  pythonProcess.stdin.write(jsonString, 'utf-8'); </br>
+  pythonProcess.stdin.end(); </br>
+의 형태로 인풋을 주고 있음.
+
+이는 파이썬 temp.py에서
+
+```python
+import numpy as np
+import pandas as pd
+import json
+import sys
+import re
+import io
+import os
+
+# stdin의 인코딩을 UTF-8로 재설정
+sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+def main():
+    try:
+        # JSON 데이터 직접 로드
+        json_data = json.load(sys.stdin)
+    except json.JSONDecodeError as e:
+        print(f"JSON decode error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+    """
+    input으로 json_data가 들어갑니다. 
+    json_data는 username, tag, line 세 가지 정보를 가지고 있습니다.
+
+    이 사이에 파이썬 추가 하시거나 아니면 직접 만드셔도 되고,
+
+    아웃풋으로 champions를 주시면 바로 작동 가능할 것 같습니다.
+    """
+
+    
+    # 챔피언 정보를 JSON으로 출력
+    response_data = {
+        "message": "Data received successfully",
+        "champions": ['가렌', '갈리오', '갱플랭크']
+        # "champions": champions
+    }
+    if json_data['tag'] == "KR3":
+        response_data['champions'] = ['알리스타', '브라움', '마오카이']
+    
+    # ensure_ascii=False를 사용하여 한글이 제대로 출력되도록 함
+    print(json.dumps(response_data, ensure_ascii=False))
+
+if __name__ == "__main__":
+    main()
+```
+
+로 json_data를 받아 response_data의 champions를 수정하면 끝임. </br>
+예시로 json_data['tag'] == "KR3"일 경우 </br>
+제 서버에서는 잘 동작했습니다. </br>

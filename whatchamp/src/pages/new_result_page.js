@@ -18,10 +18,10 @@ function NewResultPage() {
   const { questionMap, line, username, tag } = useQuestionContext();
   const [championList, setChampionList] = useState([]);
   const idx = line;
-  useEffect(() => {
-    // Initial static data for demonstration
-    setChampionList(['카직스', '크산테', '코그모']);
-  }, []);
+  // useEffect(() => {
+  //   // Initial static data for demonstration
+  //   setChampionList(['카직스', '크산테', '코그모']);
+  // }, []);
 
   
   useEffect(() => {

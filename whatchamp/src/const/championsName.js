@@ -717,614 +717,634 @@ export const cNameMap = {
   },
   '아우렐리온 솔': {
     idx: 10,
-    en: 'Aurelion Sol'
+    en: 'AurelionSol'
+  },
+  '오로라': {
+    idx: 11,
+    en: 'Aurora'
   },
   '아지르': {
-    idx: 11,
+    idx: 12,
     en: 'Azir'
   },
   '바드': {
-    idx: 12,
+    idx: 13,
     en: 'Bard'
   },
   '벨베스': {
-    idx: 13,
+    idx: 14,
     en: 'Belveth'
   },
   '블리츠크랭크': {
-    idx: 14,
+    idx: 15,
     en: 'Blitzcrank'
   },
   '브랜드': {
-    idx: 15,
+    idx: 16,
     en: 'Brand'
   },
   '브라움': {
-    idx: 16,
+    idx: 17,
     en: 'Braum'
   },
+  '브라이어': {
+    idx: 18,
+    en: 'Briar'
+  },
   '케이틀린': {
-    idx: 17,
+    idx: 19,
     en: 'Caitlyn'
   },
   '카밀': {
-    idx: 18,
+    idx: 20,
     en: 'Camille'
   },
   '카시오페아': {
-    idx: 19,
+    idx: 21,
     en: 'Cassiopeia'
   },
   '초가스': {
-    idx: 20,
+    idx: 22,
     en: 'Chogath'
   },
   '코르키': {
-    idx: 21,
+    idx: 23,
     en: 'Corki'
   },
   '다리우스': {
-    idx: 22,
+    idx: 24,
     en: 'Darius'
   },
   '다이애나': {
-    idx: 23,
+    idx: 25,
     en: 'Diana'
   },
   '드레이븐': {
-    idx: 24,
+    idx: 26,
     en: 'Draven'
   },
   '문도 박사': {
-    idx: 25,
-    en: 'Dr. Mundo'
+    idx: 27,
+    en: 'DrMundo'
   },
   '에코': {
-    idx: 26,
+    idx: 28,
     en: 'Ekko'
   },
   '엘리스': {
-    idx: 27,
+    idx: 29,
     en: 'Elise'
   },
   '이블린': {
-    idx: 28,
+    idx: 30,
     en: 'Evelynn'
   },
   '이즈리얼': {
-    idx: 29,
+    idx: 31,
     en: 'Ezreal'
   },
   '피들스틱': {
-    idx: 30,
+    idx: 32,
     en: 'Fiddlesticks'
   },
   '피오라': {
-    idx: 31,
+    idx: 33,
     en: 'Fiora'
   },
   '피즈': {
-    idx: 32,
+    idx: 34,
     en: 'Fizz'
   },
   '갈리오': {
-    idx: 33,
+    idx: 35,
     en: 'Galio'
   },
   '갱플랭크': {
-    idx: 34,
+    idx: 36,
     en: 'Gangplank'
   },
   '가렌': {
-    idx: 35,
+    idx: 37,
     en: 'Garen'
   },
   '나르': {
-    idx: 36,
+    idx: 38,
     en: 'Gnar'
   },
   '그라가스': {
-    idx: 37,
+    idx: 39,
     en: 'Gragas'
   },
   '그레이브즈': {
-    idx: 38,
+    idx: 40,
     en: 'Graves'
   },
   '그웬': {
-    idx: 39,
+    idx: 41,
     en: 'Gwen'
   },
   '헤카림': {
-    idx: 40,
+    idx: 42,
     en: 'Hecarim'
   },
   '하이머딩거': {
-    idx: 41,
+    idx: 43,
     en: 'Heimerdinger'
   },
+  '흐웨이': {
+    idx: 44,
+    en: 'Hwei'
+  },
   '일라오이': {
-    idx: 42,
+    idx: 45,
     en: 'Illaoi'
   },
   '이렐리아': {
-    idx: 43,
+    idx: 46,
     en: 'Irelia'
   },
   '아이번': {
-    idx: 44,
+    idx: 47,
     en: 'Ivern'
   },
   '잔나': {
-    idx: 45,
+    idx: 48,
     en: 'Janna'
   },
   '자르반 4세': {
-    idx: 46,
-    en: 'Jarvan IV'
+    idx: 49,
+    en: 'JarvanIV'
   },
   '잭스': {
-    idx: 47,
+    idx: 50,
     en: 'Jax'
   },
   '제이스': {
-    idx: 48,
+    idx: 51,
     en: 'Jayce'
   },
   '진': {
-    idx: 49,
+    idx: 52,
     en: 'Jhin'
   },
   '징크스': {
-    idx: 50,
+    idx: 53,
     en: 'Jinx'
   },
   '카이사': {
-    idx: 51,
+    idx: 54,
     en: 'Kaisa'
   },
   '칼리스타': {
-    idx: 52,
+    idx: 55,
     en: 'Kalista'
   },
   '카르마': {
-    idx: 53,
+    idx: 56,
     en: 'Karma'
   },
   '카서스': {
-    idx: 54,
+    idx: 57,
     en: 'Karthus'
   },
   '카사딘': {
-    idx: 55,
+    idx: 58,
     en: 'Kassadin'
   },
   '카타리나': {
-    idx: 56,
+    idx: 59,
     en: 'Katarina'
   },
   '케일': {
-    idx: 57,
+    idx: 60,
     en: 'Kayle'
   },
   '케인': {
-    idx: 58,
+    idx: 61,
     en: 'Kayn'
   },
   '케넨': {
-    idx: 59,
+    idx: 62,
     en: 'Kennen'
   },
   '카직스': {
-    idx: 60,
+    idx: 63,
     en: 'Khazix'
   },
   '킨드레드': {
-    idx: 61,
+    idx: 64,
     en: 'Kindred'
   },
   '클레드': {
-    idx: 62,
+    idx: 65,
     en: 'Kled'
   },
   '코그모': {
-    idx: 63,
+    idx: 66,
     en: 'KogMaw'
   },
-  '크산테': {
-    idx: 64,
+  '크샨테': {
+    idx: 67,
     en: 'KSante'
   },
   '르블랑': {
-    idx: 65,
-    en: 'LeBlanc'
+    idx: 68,
+    en: 'Leblanc'
   },
   '리 신': {
-    idx: 66,
-    en: 'Lee Sin'
+    idx: 69,
+    en: 'LeeSin'
   },
   '레오나': {
-    idx: 67,
+    idx: 70,
     en: 'Leona'
   },
   '릴리아': {
-    idx: 68,
+    idx: 71,
     en: 'Lillia'
   },
   '리산드라': {
-    idx: 69,
+    idx: 72,
     en: 'Lissandra'
   },
   '루시안': {
-    idx: 70,
+    idx: 73,
     en: 'Lucian'
   },
   '룰루': {
-    idx: 71,
+    idx: 74,
     en: 'Lulu'
   },
   '럭스': {
-    idx: 72,
+    idx: 75,
     en: 'Lux'
   },
   '말파이트': {
-    idx: 73,
+    idx: 76,
     en: 'Malphite'
   },
   '말자하': {
-    idx: 74,
+    idx: 77,
     en: 'Malzahar'
   },
   '마오카이': {
-    idx: 75,
+    idx: 78,
     en: 'Maokai'
   },
   '마스터 이': {
-    idx: 76,
-    en: 'Master Yi'
+    idx: 79,
+    en: 'MasterYi'
   },
   '밀리오': {
-    idx: 77,
+    idx: 80,
     en: 'Milio'
   },
   '미스 포츈': {
-    idx: 78,
-    en: 'Miss Fortune'
+    idx: 81,
+    en: 'MissFortune'
+  },
+  '오공': {
+    idx: 82,
+    en: 'MonkeyKing'
   },
   '모데카이저': {
-    idx: 79,
+    idx: 83,
     en: 'Mordekaiser'
   },
   '모르가나': {
-    idx: 80,
+    idx: 84,
     en: 'Morgana'
   },
+  '나피리': {
+    idx: 85,
+    en: 'Naafiri'
+  },
   '나미': {
-    idx: 81,
+    idx: 86,
     en: 'Nami'
   },
   '나서스': {
-    idx: 82,
+    idx: 87,
     en: 'Nasus'
   },
   '노틸러스': {
-    idx: 83,
+    idx: 88,
     en: 'Nautilus'
   },
   '니코': {
-    idx: 84,
+    idx: 89,
     en: 'Neeko'
   },
   '니달리': {
-    idx: 85,
+    idx: 90,
     en: 'Nidalee'
   },
   '닐라': {
-    idx: 86,
+    idx: 91,
     en: 'Nilah'
   },
   '녹턴': {
-    idx: 87,
+    idx: 92,
     en: 'Nocturne'
   },
   '누누와 윌럼프': {
-    idx: 88,
-    en: 'Nunu & Willump'
+    idx: 93,
+    en: 'Nunu'
   },
   '올라프': {
-    idx: 89,
+    idx: 94,
     en: 'Olaf'
   },
   '오리아나': {
-    idx: 90,
+    idx: 95,
     en: 'Orianna'
   },
   '오른': {
-    idx: 91,
+    idx: 96,
     en: 'Ornn'
   },
   '판테온': {
-    idx: 92,
+    idx: 97,
     en: 'Pantheon'
   },
   '뽀삐': {
-    idx: 93,
+    idx: 98,
     en: 'Poppy'
   },
   '파이크': {
-    idx: 94,
+    idx: 99,
     en: 'Pyke'
   },
   '키아나': {
-    idx: 95,
+    idx: 100,
     en: 'Qiyana'
   },
   '퀸': {
-    idx: 96,
+    idx: 101,
     en: 'Quinn'
   },
   '라칸': {
-    idx: 97,
+    idx: 102,
     en: 'Rakan'
   },
   '람머스': {
-    idx: 98,
+    idx: 103,
     en: 'Rammus'
   },
   '렉사이': {
-    idx: 99,
-    en: 'Reksai'
+    idx: 104,
+    en: 'RekSai'
   },
   '렐': {
-    idx: 100,
+    idx: 105,
     en: 'Rell'
   },
   '레나타 글라스크': {
-    idx: 101,
-    en: 'Renata Glasc'
+    idx: 106,
+    en: 'Renata'
   },
   '레넥톤': {
-    idx: 102,
+    idx: 107,
     en: 'Renekton'
   },
   '렝가': {
-    idx: 103,
+    idx: 108,
     en: 'Rengar'
   },
   '리븐': {
-    idx: 104,
+    idx: 109,
     en: 'Riven'
   },
   '럼블': {
-    idx: 105,
+    idx: 110,
     en: 'Rumble'
   },
   '라이즈': {
-    idx: 106,
+    idx: 111,
     en: 'Ryze'
   },
   '사미라': {
-    idx: 107,
+    idx: 112,
     en: 'Samira'
   },
   '세주아니': {
-    idx: 108,
+    idx: 113,
     en: 'Sejuani'
   },
   '세나': {
-    idx: 109,
+    idx: 114,
     en: 'Senna'
   },
   '세라핀': {
-    idx: 110,
+    idx: 115,
     en: 'Seraphine'
   },
   '세트': {
-    idx: 111,
+    idx: 116,
     en: 'Sett'
   },
   '샤코': {
-    idx: 112,
+    idx: 117,
     en: 'Shaco'
   },
   '쉔': {
-    idx: 113,
+    idx: 118,
     en: 'Shen'
   },
   '쉬바나': {
-    idx: 114,
+    idx: 119,
     en: 'Shyvana'
   },
   '신지드': {
-    idx: 115,
+    idx: 120,
     en: 'Singed'
   },
   '사이온': {
-    idx: 116,
+    idx: 121,
     en: 'Sion'
   },
   '시비르': {
-    idx: 117,
+    idx: 122,
     en: 'Sivir'
   },
   '스카너': {
-    idx: 118,
+    idx: 123,
     en: 'Skarner'
   },
+  '스몰더': {
+    idx: 124,
+    en: 'Smolder'
+  },
   '소나': {
-    idx: 119,
+    idx: 125,
     en: 'Sona'
   },
   '소라카': {
-    idx: 120,
+    idx: 126,
     en: 'Soraka'
   },
   '스웨인': {
-    idx: 121,
+    idx: 127,
     en: 'Swain'
   },
   '사일러스': {
-    idx: 122,
+    idx: 128,
     en: 'Sylas'
   },
   '신드라': {
-    idx: 123,
+    idx: 129,
     en: 'Syndra'
   },
   '탐 켄치': {
-    idx: 124,
-    en: 'Tahm Kench'
+    idx: 130,
+    en: 'TahmKench'
   },
   '탈리야': {
-    idx: 125,
+    idx: 131,
     en: 'Taliyah'
   },
   '탈론': {
-    idx: 126,
+    idx: 132,
     en: 'Talon'
   },
   '타릭': {
-    idx: 127,
+    idx: 133,
     en: 'Taric'
   },
   '티모': {
-    idx: 128,
+    idx: 134,
     en: 'Teemo'
   },
   '쓰레쉬': {
-    idx: 129,
+    idx: 135,
     en: 'Thresh'
   },
   '트리스타나': {
-    idx: 130,
+    idx: 136,
     en: 'Tristana'
   },
   '트런들': {
-    idx: 131,
+    idx: 137,
     en: 'Trundle'
   },
   '트린다미어': {
-    idx: 132,
+    idx: 138,
     en: 'Tryndamere'
   },
   '트위스티드 페이트': {
-    idx: 133,
-    en: 'Twisted Fate'
+    idx: 139,
+    en: 'TwistedFate'
   },
   '트위치': {
-    idx: 134,
+    idx: 140,
     en: 'Twitch'
   },
   '우디르': {
-    idx: 135,
+    idx: 141,
     en: 'Udyr'
   },
   '우르곳': {
-    idx: 136,
+    idx: 142,
     en: 'Urgot'
   },
   '바루스': {
-    idx: 137,
+    idx: 143,
     en: 'Varus'
   },
   '베인': {
-    idx: 138,
+    idx: 144,
     en: 'Vayne'
   },
   '베이가': {
-    idx: 139,
+    idx: 145,
     en: 'Veigar'
   },
   '벨코즈': {
-    idx: 140,
+    idx: 146,
     en: 'Velkoz'
   },
   '벡스': {
-    idx: 141,
+    idx: 147,
     en: 'Vex'
   },
   '바이': {
-    idx: 142,
+    idx: 148,
     en: 'Vi'
   },
   '비에고': {
-    idx: 143,
+    idx: 149,
     en: 'Viego'
   },
   '빅토르': {
-    idx: 144,
+    idx: 150,
     en: 'Viktor'
   },
   '블라디미르': {
-    idx: 145,
+    idx: 151,
     en: 'Vladimir'
   },
   '볼리베어': {
-    idx: 146,
+    idx: 152,
     en: 'Volibear'
   },
   '워윅': {
-    idx: 147,
+    idx: 153,
     en: 'Warwick'
   },
-  '오공': {
-    idx: 148,
-    en: 'Wukong'
-  },
   '자야': {
-    idx: 149,
+    idx: 154,
     en: 'Xayah'
   },
   '제라스': {
-    idx: 150,
+    idx: 155,
     en: 'Xerath'
   },
   '신 짜오': {
-    idx: 151,
-    en: 'Xin Zhao'
+    idx: 156,
+    en: 'XinZhao'
   },
   '야스오': {
-    idx: 152,
+    idx: 157,
     en: 'Yasuo'
   },
   '요네': {
-    idx: 153,
+    idx: 158,
     en: 'Yone'
   },
   '요릭': {
-    idx: 154,
+    idx: 159,
     en: 'Yorick'
   },
   '유미': {
-    idx: 155,
+    idx: 160,
     en: 'Yuumi'
   },
   '자크': {
-    idx: 156,
+    idx: 161,
     en: 'Zac'
   },
   '제드': {
-    idx: 157,
+    idx: 162,
     en: 'Zed'
   },
   '제리': {
-    idx: 158,
+    idx: 163,
     en: 'Zeri'
   },
   '직스': {
-    idx: 159,
+    idx: 164,
     en: 'Ziggs'
   },
   '질리언': {
-    idx: 160,
+    idx: 165,
     en: 'Zilean'
   },
   '조이': {
-    idx: 161,
+    idx: 166,
     en: 'Zoe'
   },
   '자이라': {
-    idx: 162,
+    idx: 167,
     en: 'Zyra'
   }
 };
